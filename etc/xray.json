@@ -67,7 +67,8 @@
         {
             "protocol": "freedom",
             "settings": {
-                "domainStrategy": "UseIPv4"
+                "domainStrategy": "UseIPv4",
+                "userLevel": 0
             }
         },
         {
