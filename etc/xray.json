@@ -4,6 +4,29 @@
     },
     "inbounds": [
         {   
+            "listen": "/etc/caddy/vmess",
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "$AUUID",
+                        "alterId": 0,
+                        "security": "auto",
+                        "level": 0,
+                        "email": "love@v2fly.org"
+                    }
+                ],
+                "disableInsecureEncryption": "true"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "allowInsecure": false,
+                "wsSettings": {
+                  "path": "/$AUUID-vmess"
+                }
+            }
+        },
+        {   
             "listen": "/etc/caddy/vless",
             "protocol": "vless",
             "settings": {
@@ -21,6 +44,61 @@
                 "allowInsecure": false,
                 "wsSettings": {
                   "path": "/$AUUID-vless"
+                }
+            }
+        },
+        {   
+            "listen": "127.0.0.1",
+            "port": 4234,
+            "tag": "onetag",
+            "protocol": "dokodemo-door",
+            "settings": {
+                "address": "v1.mux.cool",
+                "network": "tcp",
+                "followRedirect": false
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                  "path": "/$AUUID-ss"
+                }
+            }
+        },
+        {   
+            "listen": "127.0.0.1",
+            "port": 4324,
+            "protocol": "shadowsocks",
+            "settings": {
+                "method": "$ParameterSSENCYPT",
+                "password": "$AUUID"
+            },
+            "streamSettings": {
+                "network": "domainsocket",
+                "security": "none",
+                "dsSettings": {
+                  "path": "apath",
+                  "abstract": true
+                }
+            }
+        },
+        {   
+            "listen": "127.0.0.1",
+            "port": 5234,
+            "protocol": "socks",
+            "settings": {
+                "auth": "password",
+                "accounts": [
+                    {
+                        "user": "$AUUID",
+                        "pass": "$AUUID"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "wsSettings": {
+                  "path": "/$AUUID-socks"
                 }
             }
         },
@@ -60,6 +138,29 @@
                   "geosite:category-ads-all"
               ],
               "outboundTag": "blocked"
+           },
+           {
+              "type": "field",
+              "inboundTag": [
+                  "onetag"
+              ],
+              "outboundTag":
+                  "twotag"
+           },
+           {
+              "type": "field",
+              "outboundTag":
+                  "sockstor",
+                  "domains": [
+                      "geosite:tor"
+                  ]
+           },
+           {
+              "type": "field",
+              "outboundTag": "blocked",
+              "domains": [
+                  "geosite:category-ads-all"
+              ]
            }
         ]
     },
@@ -70,6 +171,29 @@
         {
             "protocol": "blackhole",
             "tag": "blocked"
+        },
+        {
+            "protocol": "socks",
+            "tag": "sockstor",
+            "settings": {
+                "servers": [
+                    {
+                        "address": "127.0.0.1",
+                        "port": 9050
+                    }
+                ]
+            }
+        },
+        {
+            "protocol": "freedom",
+            "tag": "twotag",
+            "streamSettings": {
+                "network": "domainsocket",
+                "dsSettings": {
+                    "path": "apath",
+                    "abstract": true
+                }
+            }
         }
     ]
 }
