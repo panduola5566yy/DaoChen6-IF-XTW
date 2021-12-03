@@ -54,6 +54,25 @@
 * 加密：chacha20-ietf-poly1305
 * 插件选项: tls;host=应用程序名.herokuapp.com;path=/自定义UUID码-ss
 
+## 4：Caddy主页配置
+
+# Caddyindexpage变量 (欢迎大佬Pull Requests)
+
+从以下链接中复制喜欢的主页链接到CADDYIndexPage变量中
+| 序号 | 地址 |
+| ------ | ------- |
+| 1(默认) | [Welcome to caddy page](https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html) |
+| 2 | [3DCEList Periodic Table of Elements](https://github.com/wulabing/3DCEList/archive/master.zip) |
+| 3 | [Spotify-Landing-Page-Redesign](https://github.com/WebDevSimplified/Spotify-Landing-Page-Redesign/archive/master.zip) |
+| 4 | [dev-landing-page](https://github.com/flexdinesh/dev-landing-page/archive/master.zip) |
+| 5 | [free-for-dev](https://github.com/ripienaar/free-for-dev/archive/master.zip) |
+| 6 | [tailwindtoolbox-Landing-Page](https://github.com/tailwindtoolbox/Landing-Page/archive/master.zip) |
+| 7 | [sandhikagalih/simple-landing-page](https://github.com/sandhikagalih/simple-landing-page/archive/master.zip) |
+| 8 | [StartBootstrap/startbootstrap-new-age](https://github.com/StartBootstrap/startbootstrap-new-age/archive/master.zip) |
+| 9 | [mikutap A fun page with music](https://github.com/AYJCSGM/mikutap/archive/master.zip) [demo](https://aidn.jp/mikutap) |
+| 10 | [WebGL Fluid simulation](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/archive/master.zip) [demo](https://paveldogreat.github.io/WebGL-Fluid-Simulation/) |
+| 11 | [loruki-website](https://github.com/bradtraversy/loruki-website/archive/master.zip) |
+| 12 | [bongo.cat A musical cat](https://github.com/Externalizable/bongo.cat/archive/master.zip) [demo](https://bongo.cat/) |
 
 ### CloudFlare Workers反代代码（支持VLESS\VMESS\Trojan-Go的WS模式，可分别用两个账号的应用程序名（UUID与path保持一致），单双号天分别执行，那一个月就有550+550小时）
 
