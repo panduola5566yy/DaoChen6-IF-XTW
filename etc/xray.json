@@ -9,7 +9,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "$ID",
+                        "id": "$AUUID",
                         "level": 0,
                         "email": "love@v2fly.org"
                     }
@@ -20,7 +20,7 @@
                 "network": "ws",
                 "allowInsecure": false,
                 "wsSettings": {
-                  "path": "/$ID-vless"
+                  "path": "/$AUUID-vless"
                 }
             }
         },
@@ -30,7 +30,7 @@
             "settings": {
                 "clients": [
                     {
-                        "password":"$ID",
+                        "password":"$AUUID",
                         "level": 0,
                         "email": "love@v2fly.org"
                     }
@@ -41,7 +41,7 @@
                 "network": "ws",
                 "allowInsecure": false,
                 "wsSettings": {
-                  "path": "/$ID-trojan"
+                  "path": "/$AUUID-trojan"
                 }
             }
         }
