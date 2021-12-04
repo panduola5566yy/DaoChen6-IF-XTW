@@ -67,8 +67,10 @@
             "port": 4324,
             "protocol": "shadowsocks",
             "settings": {
+                "network": "tcp,udp",
                 "method": "$ParameterSSENCYPT",
-                "password": "$AUUID"
+                "password": "$AUUID",
+                "ivCheck": true
             },
             "streamSettings": {
                 "network": "domainsocket",
