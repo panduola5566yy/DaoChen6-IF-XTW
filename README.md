@@ -6,19 +6,23 @@
 
 ### 已不部署Trojan-Go、Shadowsocks，有兴趣的大佬可以推pr，本人也在尝试。
 
-## 服务端创建操作流程 
-0）给本项目个stars
+## 服务端创建操作流程
 
-1）将本项目fork至自己仓库修改`Deploy to Heroku`按键指向地址为自己仓库地址
+0.给本项目个stars
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/DaoChen6/IF-XTW)  
-2）点击上面紫色`Deploy to Heroku`，会跳转到heroku app创建页面，填上应用程序名、选择节点（美国或者欧洲）、自定义UUID码，其他建议保持默认，点击下面deploy，几秒后搞定！   
+1.将本项目fork至自己仓库修改`Deploy to Heroku`按键指向地址为自己仓库地址
 
-3）若出现`We couldn't deploy your app because the source code violates the Salesforce Acceptable Use and External-Facing Services Policy.`提示，则返回仓库，>`Setting`>`Repository name`修改仓库名。
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/DaoChen6/IF-XTW) 
 
-4）然后修改app.json文件中的`name`、`description`值
+2.点击上面紫色`Deploy to Heroku`，会跳转到heroku app创建页面，填上应用程序名、选择节点（美国或者欧洲）、自定义UUID码、自定义CADDYIndexPage（参考：[Caddy主页配置](#Caddy主页配置)），其他建议保持默认，点击下面deploy，几秒后搞定！   
 
-5）再修改`Deploy to Heroku`按键指向地址为自己仓库地址，重复`2）`的操作
+3.若出现`We couldn't deploy your app because the source code violates the Salesforce Acceptable Use and External-Facing Services Policy.`提示，则返回仓库，>`Setting`>`Repository name`修改仓库名。
+
+4.然后修改app.json文件中的`name（不填写也能创建，名字会由heroku随机生成）`、`description`值，注意`repository`必须留空以免项目被禁
+
+5.再修改`Deploy to Heroku`按键指向地址为自己仓库地址，重复`2）`的操作
+
+6.带有删除线的部分表示已经废弃或不适用
 
 ## vmess vless trojan-go shadowsocks对应客户端参数的参考如下,末尾带()里的内容仅为提示
 
@@ -29,7 +33,7 @@
 |**代理协议**|VLESS+ws+tls</br>Vmess+ws+tls|
 |服务器地址|自选ip（如：icook.tw）</br>应用程序名.herokuapp.com|
 |端口|443|
-|默认UUID|8f91b6a0-e8ee-11ea-adc1-0242ac120002|
+|默认UUID|8f91b6a0-e8ee-11ea-adc1-0242ac120002</br>**注意：务必创建时自定义UUID码**|
 |加密|Vmess: Auto</br>VLESS: none</br>**注意：Vmess默认禁止以下加密方式连接：none、aes-128-cfb**|
 |传输协议|ws|
 |伪装类型|none|
@@ -43,33 +47,34 @@
 ## 2：Trojan-Go+ws
 
 |**属性**|**对应值**|
-| :----: | :-----: |
-
-* 服务器地址：自选ip（如：icook.tw）或者：应用程序名.herokuapp.com
-* 端口：443
-* 密码：8f91b6a0-e8ee-11ea-adc1-0242ac120002   (务必创建时自定义UUID码) 
-* 传输协议：ws
-* path路径：/自定义UUID码-trojan  (注意：前有斜杠/)
-* SNI地址：****.workers.dev(CF Workers反代地址)或者：应用程序名.herokuapp.com
-* 伪装host：****.workers.dev(CF Workers反代地址)或者：应用程序名.herokuapp.com
+|:------:|:-------:|
+|服务器地址|自选ip（如：icook.tw）</br>应用程序名.herokuapp.com|
+|端口|443|
+|密码|8f91b6a0-e8ee-11ea-adc1-0242ac120002</br>**注意：务必创建时自定义UUID码**|
+|传输协议|ws|
+|Path路径|/自定义UUID码-trojan</br>**注意：前有斜杠/**|
+|SNI地址|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
+|伪装host</br>TLS Host|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
 
 ## 3：Shadowsocks+ws+tls
 
-* 服务器地址: 应用程序名.herokuapp.com
-* 端口: 443
-* 密码：8f91b6a0-e8ee-11ea-adc1-0242ac120002   (务必创建时自定义UUID码) 
-* 加密：chacha20-ietf-poly1305
-* 插件选项: tls;host=应用程序名.herokuapp.com;path=/自定义UUID码-ss
-* lean lede使用ssrplus+请使用Shadowsocks new version连接
-* 调整加密方式请参考 https://www.v2fly.org/config/protocols/shadowsocks.html#inboundconfigurationobject
+|**属性**|**对应值**|
+|:------:|:-------:|
+|服务器地址|自选ip（如：icook.tw）</br>应用程序名.herokuapp.com|
+|端口|443|
+|密码|8f91b6a0-e8ee-11ea-adc1-0242ac120002</br>**注意：务必创建时自定义UUID码**|
+|加密方式|chacha20-ietf-poly1305</br>[调整加密方式请参考](https://www.v2fly.org/config/protocols/shadowsocks.html#%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F%E5%88%97%E8%A1%A8)|
+|插件选项|tls;host=应用程序名.herokuapp.com;path=/自定义UUID码-ss|
+|**注意事项**|**1.加密方式选项仅限有经验的用户调整，因调整错误所发生的后果本项目不承担任何责任！**</br>**2.使用lean lede的SSRPlus+的用户请使用Shadowsocks new version连接**|
 
 ## 4：Trojan+ws+tls客户端支持状态
 
-| 客户端 | 是否支持Trojan+ws+tls |
-| ------ | -------------------- |
-| `2dust V2RayN`</br>`2dust V2RayNG` | 否，请使用Vmess+ws+tls或VLESS+ws+tls |
-| `OpenWrt SSRPlus+` | 是 |
-| `OpenWrt Passwall` | 否，请使用Vmess+ws+tls或VLESS+ws+tls |
+|客户端|是否支持Trojan+ws+tls|
+|:----:|:------------------:|
+|2dust V2RayN</br>2dust V2RayNG|否，请使用Vmess+ws+tls或VLESS+ws+tls|
+|OpenWrt SSRPlus+|是|
+|OpenWrt Passwall|否，请使用Vmess+ws+tls或VLESS+ws+tls|
+|~~QV2Ray~~|~~QV2Ray~~|
 
 ## 5：Caddy主页配置
 
@@ -77,8 +82,8 @@
 
 * 从以下链接中复制喜欢的主页链接到CADDYIndexPage变量中
 
-| 序号 | 地址 |
-| ---- | ---- |
+|#|地址|
+|:-:|:-:|
 | 1(默认) | [Welcome to caddy page](https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html) |
 | 2 | [3DCEList Periodic Table of Elements](https://github.com/wulabing/3DCEList/archive/master.zip) |
 | 3 | [Spotify-Landing-Page-Redesign](https://github.com/WebDevSimplified/Spotify-Landing-Page-Redesign/archive/master.zip) |
@@ -93,6 +98,23 @@
 | 12 | [bongo.cat A musical cat](https://github.com/Externalizable/bongo.cat/archive/master.zip) [demo](https://bongo.cat/) |
 
 ### CloudFlare Workers反代代码（支持VLESS\VMESS\Trojan-Go的WS模式，可分别用两个账号的应用程序名（UUID与path保持一致），单双号天分别执行，那一个月就有550+550小时）
+
+1.适用单一应用的反代代码
+
+```
+addEventListener(
+  "fetch", event => {
+    let url = new URL(event.request.url);
+    url.host = "appname.herokuapp.com";
+    let request = new Request(url, event.request);
+    event.respondWith(
+      fetch(request)
+    )
+  }
+)
+```
+
+2.适用单双日循环执行的反代代码
 
 ```
 const SingleDay = '应用程序名1.herokuapp.com'
@@ -116,7 +138,9 @@ addEventListener(
     }
 )
 ```
-----------------------------------------------------------------------------------------------
+
+3.适用多实例循环执行的反代代码
+
 ```
 const Day0 = 'app0.herokuapp.com'
 const Day1 = 'app1.herokuapp.com'
@@ -153,3 +177,12 @@ addEventListener(
 ```
 
 ### 原作者项目地址：https://github.com/mixool/xrayku
+
+# 鸣谢
+
+- [Xrayku](https://github.com/mixool/xrayku)
+- [Project V](https://github.com/v2fly/v2ray-core.git)
+- [Project X](https://github.com/XTLS/Xray-core.git)
+- [HeroKu](https://heroku.com)
+- [heroku-vless](https://github.com/DanyTPG/heroku-vless.git)
+- [Better Cloudflare IP](https://github.com/XIU2/CloudflareSpeedTest.git)
