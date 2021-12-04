@@ -25,9 +25,9 @@
 ## 1：Xray
 
 |**属性**|**对应值**|
-| :------: | :---------: |
-| **代理协议** | -VLESS+ws+tls`</br>`Vmess+ws+tls- |
-| 服务器地址 | -自选ip（如：icook.tw）-</br>-应用程序名.herokuapp.com- |
+|:------:|:---------:|
+| **代理协议** | `VLESS+ws+tls</br>Vmess+ws+tls` |
+| 服务器地址 | `自选ip（如：icook.tw）-</br>-应用程序名.herokuapp.com` |
 | 端口 | `443` |
 | 默认UUID | `8f91b6a0-e8ee-11ea-adc1-0242ac120002` |
 | 加密 | `Vmess: Auto`</br>`VLESS: none`</br>**注意：Vmess默认禁止以下加密方式连接：none、aes-128-cfb** |
