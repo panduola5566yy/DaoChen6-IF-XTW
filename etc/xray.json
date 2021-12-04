@@ -10,13 +10,10 @@
                 "clients": [
                     {
                         "id": "$AUUID",
-                        "alterId": 0,
-                        "security": "auto",
-                        "level": 0,
-                        "email": "love@v2fly.org"
+                        "alterId": 0
                     }
                 ],
-                "disableInsecureEncryption": "true"
+                "disableInsecureEncryption": true
             },
             "streamSettings": {
                 "network": "ws",
