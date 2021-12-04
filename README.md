@@ -24,19 +24,21 @@
 
 ## 1：Xray
 
-### 代理协议：vless+ws+tls 或 vmess+ws+tls
-* 服务器地址：自选ip（如：icook.tw）或者：应用程序名.herokuapp.com
-* 端口：443
-* 默认UUID：8f91b6a0-e8ee-11ea-adc1-0242ac120002   (务必创建时自定义UUID码)
-* 加密：none
-* 传输协议：ws
-* 伪装类型：none
-* 伪装host：****.workers.dev(CF Workers反代地址)或者：应用程序名.herokuapp.com
-* SNI地址：****.workers.dev(CF Workers反代地址)或者：应用程序名.herokuapp.com
-* path路径：/自定义UUID码-vless 或 /自定义UUID码-vmess    (注意：前有斜杠/)
-* vmess额外id（alterid）：0
-* 底层传输安全：tls
-* 跳过证书验证：false
+|**属性**|**对应值**|
+| :------: | :---------: |
+|`**代理协议**`| `VLESS+ws+tls`</br>`Vmess+ws+tls` |
+| `服务器地址` | `自选ip（如：icook.tw）`</br>`应用程序名.herokuapp.com` |
+| `端口` | `443` |
+| `默认UUID` | `8f91b6a0-e8ee-11ea-adc1-0242ac120002` |
+| `加密` | `Vmess: Auto`</br>`VLESS: none`</br>`**注意：Vmess默认禁止以下加密方式连接：none、aes-128-cfb**` |
+| `传输协议` | `ws` |
+| `伪装类型` | `none` |
+| `伪装host` | `****.workers.dev(CF Workers反代地址)`</br>`应用程序名.herokuapp.com` |
+| `SNI地址` | `****.workers.dev(CF Workers反代地址)`</br>`应用程序名.herokuapp.com` |
+| `path路径` | `/自定义UUID码-vless`</br>`/自定义UUID码-vmess`</br>`**注意：前有斜杠/**` |
+| `Vmess额外id（alterid）` | `0`</br>`默认启用AEAD` |
+| `底层传输安全` | `tls` |
+| `跳过证书验证` | `false` |
 
 ## 2：Trojan-Go+ws
 
