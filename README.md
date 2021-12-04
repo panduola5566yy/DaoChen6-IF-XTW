@@ -71,7 +71,7 @@
 * 从以下链接中复制喜欢的主页链接到CADDYIndexPage变量中
 
 | 序号 | 地址 |
-| ------ | ------- |
+| ---- | ---- |
 | 1(默认) | [Welcome to caddy page](https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html) |
 | 2 | [3DCEList Periodic Table of Elements](https://github.com/wulabing/3DCEList/archive/master.zip) |
 | 3 | [Spotify-Landing-Page-Redesign](https://github.com/WebDevSimplified/Spotify-Landing-Page-Redesign/archive/master.zip) |
