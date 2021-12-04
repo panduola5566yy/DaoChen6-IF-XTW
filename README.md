@@ -54,6 +54,7 @@
 * 加密：chacha20-ietf-poly1305
 * 插件选项: tls;host=应用程序名.herokuapp.com;path=/自定义UUID码-ss
 * lean lede使用ssrplus+请使用Shadowsocks new version连接
+* 调整加密方式请参考 https://www.v2fly.org/config/protocols/shadowsocks.html#inboundconfigurationobject
 
 ## 4：Trojan+ws+tls客户端支持状态
 | 客户端 | 是否支持Trojan+ws+tls |
