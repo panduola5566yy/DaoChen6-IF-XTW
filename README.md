@@ -14,7 +14,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/DaoChen6/IF-XTW) 
 
-2.点击上面紫色`Deploy to Heroku`，会跳转到heroku app创建页面，填上应用程序名、选择节点（美国或者欧洲）、自定义UUID码、自定义CADDYIndexPage（参考：[Caddy主页配置](#Caddy主页配置)），其他建议保持默认，点击下面deploy，几秒后搞定！   
+2.点击上面紫色`Deploy to Heroku`，会跳转到heroku app创建页面，填上应用程序名、选择节点（美国或者欧洲）、自定义UUID码、自定义CADDYIndexPage（参考：[Caddy主页配置](#5：Caddy主页配置），其他建议保持默认，点击下面deploy，几秒后搞定！   
 
 3.若出现`We couldn't deploy your app because the source code violates the Salesforce Acceptable Use and External-Facing Services Policy.`提示，则返回仓库，>`Setting`>`Repository name`修改仓库名。
 
