@@ -4,7 +4,7 @@
 
 ### 请之前已经fork过的用户删除项目后重新fork本项目! ! !
 
-### 已恢复Vmess、VLESS、Trojan-ws、Shadowsocks-ws的所有连接! ! !
+### 已恢复Vmess、VLESS、Trojan、Shadowsocks的所有连接! ! !
 
 ## 服务端创建操作流程
 
