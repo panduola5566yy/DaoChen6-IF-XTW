@@ -57,6 +57,7 @@
 * 调整加密方式请参考 https://www.v2fly.org/config/protocols/shadowsocks.html#inboundconfigurationobject
 
 ## 4：Trojan+ws+tls客户端支持状态
+
 | 客户端 | 是否支持Trojan+ws+tls |
 | ------ | -------------------- |
 | `2dust V2RayN`</br>`2dust V2RayNG` | 否，请使用Vmess+ws+tls或VLESS+ws+tls |
@@ -68,6 +69,7 @@
 # Caddyindexpage变量 (欢迎大佬Pull Requests)
 
 * 从以下链接中复制喜欢的主页链接到CADDYIndexPage变量中
+
 | 序号 | 地址 |
 | ------ | ------- |
 | 1(默认) | [Welcome to caddy page](https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html) |
