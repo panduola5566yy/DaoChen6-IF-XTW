@@ -53,12 +53,20 @@
 * 密码：8f91b6a0-e8ee-11ea-adc1-0242ac120002   (务必创建时自定义UUID码) 
 * 加密：chacha20-ietf-poly1305
 * 插件选项: tls;host=应用程序名.herokuapp.com;path=/自定义UUID码-ss
+* lean lede使用ssrplus+请使用Shadowsocks new version连接
 
-## 4：Caddy主页配置
+## 4：Trojan+ws+tls客户端支持状态
+| 客户端 | 是否支持Trojan+ws+tls |
+| ------ | -------------------- |
+| `2dust V2RayN`</br>`2dust V2RayNG` | 否，请使用Vmess+ws+tls或VLESS+ws+tls |
+| `OpenWrt SSRPlus+` | 是 |
+| `OpenWrt Passwall` | 否，请使用Vmess+ws+tls或VLESS+ws+tls |
+
+## 5：Caddy主页配置
 
 # Caddyindexpage变量 (欢迎大佬Pull Requests)
 
-从以下链接中复制喜欢的主页链接到CADDYIndexPage变量中
+* 从以下链接中复制喜欢的主页链接到CADDYIndexPage变量中
 | 序号 | 地址 |
 | ------ | ------- |
 | 1(默认) | [Welcome to caddy page](https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html) |
