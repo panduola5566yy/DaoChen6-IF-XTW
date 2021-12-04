@@ -20,7 +20,7 @@
 
 4.然后修改app.json文件中的`name（不填写也能创建，名字会由heroku随机生成）`、`description`值，注意`repository`必须留空以免项目被禁
 
-5.再修改`Deploy to Heroku`按键指向地址为自己仓库地址，重复`2）`的操作
+5.再修改`Deploy to Heroku`按键指向地址为自己仓库地址，重复`2`的操作
 
 6.带有删除线的部分表示已经废弃或不适用
 
