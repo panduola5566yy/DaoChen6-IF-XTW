@@ -75,7 +75,7 @@
 |:----:|:------------------:|
 |2dust V2RayN</br>2dust V2RayNG|否，请使用Vmess+ws+tls或VLESS+ws+tls|
 |OpenWrt SSRPlus+|是|
-|OpenWrt Passwall|否，请使用Vmess+ws+tls或VLESS+ws+tls|
+|OpenWrt Passwall|是，需要最新版本passwall|
 |~~QV2Ray~~|~~QV2Ray~~|
 
 ## 5：Caddy主页配置
