@@ -8,6 +8,8 @@
 
 ### 已恢复Vmess、VLESS、Trojan、Shadowsocks的所有连接! ! !
 
+### 想改其他传输协议的请参考https://devcenter.heroku.com/articles/http-routing#http-versions-supported
+
 ## 服务端创建操作流程
 
 0.给本项目个stars
