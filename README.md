@@ -75,7 +75,7 @@
 
 |客户端|是否支持Trojan+ws+tls|
 |:----:|:------------------:|
-|2dust V2RayN</br>2dust V2RayNG|否，请使用Vmess+ws+tls或VLESS+ws+tls|
+|2dust V2RayN</br>2dust V2RayNG|是，需要V2RayN4.26+或V2RayNG最新版本(Pre-release)|
 |OpenWrt SSRPlus+|是|
 |OpenWrt Passwall|是，需要最新版本passwall|
 |~~QV2Ray~~|~~QV2Ray~~|
