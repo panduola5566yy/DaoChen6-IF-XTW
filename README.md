@@ -71,7 +71,7 @@
 |插件选项|tls;host=应用程序名.herokuapp.com;path=/自定义UUID码-ss</br>tls;host=xxxx.workers.dev(CF Workers反代地址);path=/自定义UUID码-ss|
 |**注意事项**|**1.加密方式选项仅限有经验的用户调整，因调整错误所发生的后果本项目不承担任何责任！**</br>**2.使用lean lede的SSRPlus+的用户请使用Shadowsocks new version连接，Passwall的用户请自行测试。**|
 
-## 4：Trojan+ws+tls客户端支持状态
+## 4：Trojan+ws+tls客户端支持状态（不定期更新）
 
 |客户端|是否支持Trojan+ws+tls|
 |:----:|:------------------:|
