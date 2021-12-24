@@ -1,12 +1,3 @@
----
-name: bug_report
-about: 在使用本issues提问之前请仔细阅读readme.me中的提醒和注意事项，均使用粗体标记。若readme.md中的提醒和注意事项未能解决你的问题，请发issues。
-title: ''
-labels: ''
-assignees: ''
-
----
-
 # 在提出问题前请先自行排除服务器端问题和升级到最新客户端，同时也请通过搜索确认是否有人提出过相同问题。
 # 涉及IPv4/v6、反代IP/URL、APP URL、UUID、PATH等关键信息请删除，以免信息泄露引发更大麻烦。
 
