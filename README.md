@@ -69,7 +69,7 @@
 |密码|8f91b6a0-e8ee-11ea-adc1-0242ac120002</br>**注意：务必创建时自定义UUID码**|
 |加密方式|chacha20-ietf-poly1305</br>[调整加密方式请参考](https://www.v2fly.org/config/protocols/shadowsocks.html#%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F%E5%88%97%E8%A1%A8)|
 |插件选项|tls;host=应用程序名.herokuapp.com;path=/自定义UUID码-ss</br>tls;host=xxxx.workers.dev(CF Workers反代地址);path=/自定义UUID码-ss|
-|**注意事项**|**1.加密方式选项仅限有经验的用户调整，因调整错误所发生的后果本项目不承担任何责任！**</br>**2.使用lean lede的SSRPlus+的用户请使用Shadowsocks new version连接，Passwall的用户请自行测试。**|
+|**注意事项**|**1.加密方式选项仅限有经验的用户调整，因调整错误所发生的后果本项目不承担任何责任！**</br>**2.使用lean lede的SSRPlus+的用户请使用Shadowsocks new version连接，Passwall的用户请使用Shadowsocks Libev连接。**|
 
 ## 4：Trojan+ws+tls客户端支持状态（不定期更新）
 
