@@ -47,7 +47,7 @@ header Connection *Upgrade*
 header Upgrade    websocket
 path /$AUUID-ss
 }
-reverse_proxy @websocket_xray_ss 127.0.0.1:4234
+reverse_proxy @websocket_xray_ss 127.0.0.1:4324
 
 @websocket_xray_socks {
 header Connection *Upgrade*
