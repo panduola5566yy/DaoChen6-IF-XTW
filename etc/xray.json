@@ -46,38 +46,20 @@
         },
         {   
             "listen": "127.0.0.1",
-            "port": 4234,
-            "tag": "onetag",
-            "protocol": "dokodemo-door",
+            "port": 4324,
+            "protocol": "shadowsocks",
             "settings": {
-                "address": "v1.mux.cool",
-                "network": "tcp",
-                "followRedirect": false
+                "email": "love@v2fly.org",
+                "method": "$ParameterSSENCYPT",
+                "password":"$AUUID",
+                "network": "tcp,udp",
+                "ivCheck": false
             },
             "streamSettings": {
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                  "path": "/$AUUID-ss"
-                }
-            }
-        },
-        {   
-            "listen": "127.0.0.1",
-            "port": 4324,
-            "protocol": "shadowsocks",
-            "settings": {
-                "network": "tcp,udp",
-                "method": "$ParameterSSENCYPT",
-                "password": "$AUUID",
-                "ivCheck": true
-            },
-            "streamSettings": {
-                "network": "domainsocket",
-                "security": "none",
-                "dsSettings": {
-                  "path": "apath",
-                  "abstract": true
+                    "path": "/$AUUID-ss"
                 }
             }
         },
@@ -140,14 +122,6 @@
            },
            {
               "type": "field",
-              "inboundTag": [
-                  "onetag"
-              ],
-              "outboundTag":
-                  "twotag"
-           },
-           {
-              "type": "field",
               "outboundTag":
                   "sockstor",
                   "domains": [
@@ -181,17 +155,6 @@
                         "port": 9050
                     }
                 ]
-            }
-        },
-        {
-            "protocol": "freedom",
-            "tag": "twotag",
-            "streamSettings": {
-                "network": "domainsocket",
-                "dsSettings": {
-                    "path": "apath",
-                    "abstract": true
-                }
             }
         }
     ]
