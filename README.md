@@ -30,7 +30,7 @@
 
 ## vmess vless trojan-go shadowsocks对应客户端参数的参考如下,末尾带()里的内容仅为提示
 
-## 1：Xray
+## 1：Xray Vmess/VLESS ws+tls
 
 |**属性**|**对应值**|
 |:------:|:---------:|
@@ -48,7 +48,7 @@
 |底层传输安全|tls|
 |跳过证书验证|false|
 
-## 2：Trojan-Go+ws
+## 2：Xray Trojan ws+tls
 
 |**属性**|**对应值**|
 |:------:|:-------:|
@@ -60,7 +60,7 @@
 |SNI地址|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
 |伪装host</br>TLS Host|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
 
-## 3：Shadowsocks+ws+tls
+## 3：Xray Shadowsocks ws+tls
 
 |**属性**|**对应值**|
 |:------:|:-------:|
