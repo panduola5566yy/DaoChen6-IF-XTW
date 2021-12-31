@@ -56,7 +56,7 @@
 |端口|443|
 |密码|8f91b6a0-e8ee-11ea-adc1-0242ac120002</br>**注意：务必创建时自定义UUID码**|
 |传输协议|ws|
-|Path路径|/自定义UUID码-trojan</br>**注意：前有斜杠/**|
+|Path路径|/自定义UUID码-ss</br>**注意：前有斜杠/**|
 |SNI地址|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
 |伪装host</br>TLS Host|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
 
