@@ -56,7 +56,7 @@
 |端口|443|
 |密码|8f91b6a0-e8ee-11ea-adc1-0242ac120002</br>**注意：务必创建时自定义UUID码**|
 |传输协议|ws|
-|Path路径|/自定义UUID码-ss</br>**注意：前有斜杠/**|
+|Path路径|/自定义UUID码-trojan</br>**注意：前有斜杠/**|
 |SNI地址|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
 |伪装host</br>TLS Host|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
 
@@ -71,7 +71,7 @@
 |传输协议|ws|
 |伪装类型|none|
 |伪装host</br>TLS Host|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
-|Path路径|/自定义UUID码-trojan</br>**注意：前有斜杠/**|
+|Path路径|/自定义UUID码-ss</br>**注意：前有斜杠/**|
 |**注意事项**|**1.加密方式选项仅限有经验的用户调整，因调整错误所发生的后果本项目不承担任何责任！**</br>**2.使用lean lede的SSRPlus+/Passwall的用户现可使用Xray/v2ray Shadowsocks ws+tls连接。**|
 
 ## 4：Trojan+ws+tls客户端支持状态（不定期更新）
