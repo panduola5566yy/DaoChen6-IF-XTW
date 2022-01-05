@@ -35,7 +35,7 @@
 |**属性**|**对应值**|
 |:------:|:---------:|
 |**代理协议**|VLESS+ws+tls</br>Vmess+ws+tls|
-|服务器地址|自选ip（如：icook.tw）</br>应用程序名.herokuapp.com|
+|服务器地址|自选ip（如：`uicdn.cf`或`icook.tw`）</br>应用程序名.herokuapp.com|
 |端口|443|
 |默认UUID|8f91b6a0-e8ee-11ea-adc1-0242ac120002</br>**注意：务必创建时自定义UUID码**|
 |加密|Vmess: Auto</br>VLESS: none</br>**注意：Vmess默认禁止以下加密方式连接：none、aes-128-cfb**|
@@ -52,7 +52,7 @@
 
 |**属性**|**对应值**|
 |:------:|:-------:|
-|服务器地址|自选ip（如：icook.tw）</br>应用程序名.herokuapp.com|
+|服务器地址|自选ip（如：`uicdn.cf`或`icook.tw`）</br>应用程序名.herokuapp.com|
 |端口|443|
 |密码|8f91b6a0-e8ee-11ea-adc1-0242ac120002</br>**注意：务必创建时自定义UUID码**|
 |传输协议|ws|
@@ -64,7 +64,7 @@
 
 |**属性**|**对应值**|
 |:------:|:-------:|
-|服务器地址|自选ip（如：icook.tw）</br>应用程序名.herokuapp.com|
+|服务器地址|自选ip（如：`uicdn.cf`或`icook.tw`）</br>应用程序名.herokuapp.com|
 |端口|443|
 |密码|8f91b6a0-e8ee-11ea-adc1-0242ac120002</br>**注意：务必创建时自定义UUID码**|
 |加密方式|chacha20-ietf-poly1305</br>[调整加密方式请参考](https://www.v2fly.org/config/protocols/shadowsocks.html#%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F%E5%88%97%E8%A1%A8)|
