@@ -11,5 +11,5 @@ for file in $(ls /usr/share/caddy/$AUUID); do
 done
 
 # start
-chmod +x ./v2ray ./v2ctl
-tor & ./v2ray -config /xray.json & /usr/bin/caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
+chmod +x ./xray
+tor & ./xray -config /xray.json & /usr/bin/caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
