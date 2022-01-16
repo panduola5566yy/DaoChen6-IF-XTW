@@ -9,8 +9,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "$AUUID",
-                        "alterId": 0
+                        "id": "$AUUID"
                     }
                 ],
                 "disableInsecureEncryption": true
