@@ -12,16 +12,12 @@
             "value": "8f91b6a0-e8ee-11ea-adc1-0242ac120002"
         },
         "CADDYIndexPage": {
-            "description": "自定义CADDY部署完成后点击View的显示页面，参考：https://github.com/DaoChen6/IF-XTW/blob/master/etc/CADDYIndexPage.md",
+            "description": "自定义CADDY部署完成后点击View的显示页面，参考readme.md中的（5：Caddy主页配置）",
             "value": "https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html"
         },
         "ParameterSSENCYPT": {
             "description": "SS加密方式，查看支持协议: https://www.v2fly.org/config/protocols/shadowsocks.html",
             "value": "chacha20-ietf-poly1305"
-        },
-        "StoreFiles": {
-            "description": "自定义网络地址读取存储文件列表",
-            "value": "https://raw.githubusercontent.com/DaoChen6/IF-XTW/master/etc/StoreFiles"
         }
     },
     "repository": "",
