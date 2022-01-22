@@ -72,6 +72,7 @@
 |加密方式|chacha20-ietf-poly1305</br>[调整加密方式请参考](https://www.v2fly.org/config/protocols/shadowsocks.html#%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F%E5%88%97%E8%A1%A8)|
 |传输协议|ws|
 |伪装类型|none|
+|ivCheck|true|
 |伪装host</br>TLS Host|xxxx.workers.dev(CF Workers反代地址)</br>应用程序名.herokuapp.com|
 |Path路径|/自定义UUID码-ss</br>**注意：前有斜杠/**|
 |**注意事项**|**1.加密方式选项仅限有经验的用户调整，因调整错误所发生的后果本项目不承担任何责任！**</br>**2.使用lean lede的SSRPlus+/Passwall的用户现可使用Xray/v2ray Shadowsocks ws+tls连接。**|
@@ -101,10 +102,10 @@
 | 6 | [tailwindtoolbox-Landing-Page](https://github.com/tailwindtoolbox/Landing-Page/archive/master.zip) |
 | 7 | [sandhikagalih/simple-landing-page](https://github.com/sandhikagalih/simple-landing-page/archive/master.zip) |
 | 8 | [StartBootstrap/startbootstrap-new-age](https://github.com/StartBootstrap/startbootstrap-new-age/archive/master.zip) |
-| 9 | [mikutap 一个好玩带音乐的页面](https://github.com/AYJCSGM/mikutap/archive/master.zip) [演示](https://aidn.jp/mikutap) |
-| 10 | [WebGL流体模拟](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/archive/master.zip) [演示](https://paveldogreat.github.io/WebGL-Fluid-Simulation/) |
+| 9 | [mikutap 一个好玩带音乐的页面](https://github.com/AYJCSGM/mikutap/archive/master.zip)<br>[演示](https://aidn.jp/mikutap) |
+| 10 | [WebGL流体模拟](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/archive/master.zip)<br>[演示](https://paveldogreat.github.io/WebGL-Fluid-Simulation/) |
 | 11 | [loruki-website](https://github.com/bradtraversy/loruki-website/archive/master.zip) |
-| 12 | [bongo.cat一只音乐的猫](https://github.com/Externalizable/bongo.cat/archive/master.zip) [演示](https://bongo.cat/) |
+| 12 | [bongo.cat一只音乐的猫](https://github.com/Externalizable/bongo.cat/archive/master.zip)<br>[演示](https://bongo.cat/) |
 
 ### CloudFlare Workers反代代码（支持VLESS\VMESS\Trojan-Go的WS模式，可分别用两个账号的应用程序名（UUID与path保持一致），单双号天分别执行，那一个月就有550+550小时）
 
