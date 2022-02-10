@@ -195,4 +195,5 @@ addEventListener(
 - [Project X](https://github.com/XTLS/Xray-core.git)
 - [HeroKu](https://heroku.com)
 - [heroku-vless](https://github.com/DanyTPG/heroku-vless.git)
-- [Better Cloudflare IP](https://github.com/XIU2/CloudflareSpeedTest.git)
+- [Better Cloudflare IP](https://github.com/badafans/better-cloudflare-ip.git)
+- [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest.git)
