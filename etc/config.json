@@ -4,7 +4,7 @@
     },
     "inbounds": [
         {   
-            "listen": "/etc/caddy/vmess",
+            "listen": "/etc/caddy/vmess,0644",
             "protocol": "vmess",
             "settings": {
                 "clients": [
@@ -30,7 +30,7 @@
             }
         },
         {   
-            "listen": "/etc/caddy/vless",
+            "listen": "/etc/caddy/vless,0644",
             "protocol": "vless",
             "settings": {
                 "clients": [
@@ -111,7 +111,7 @@
             }
         },
         {   
-            "listen": "/etc/caddy/trojan",
+            "listen": "/etc/caddy/trojan,0644",
             "protocol": "trojan",
             "settings": {
                 "clients": [
